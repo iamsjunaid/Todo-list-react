@@ -1,6 +1,17 @@
 import { useState } from 'react';
-// other imported components here
+import TodosList from './TodosList';
+import InputTodo from '@/components/InputTodo';
+
 const TodosLogic = () => {
+  
+  const delTodo = (id) => {
+    setTodos([
+      ...todos.filter((todo) => {
+        return todo.id !== id;
+      }),
+    ]);
+  };
+
   const [todos, setTodos] = useState([
     {
       id: 1,
@@ -18,9 +29,11 @@ const TodosLogic = () => {
       completed: false,
     },
   ]);
+
   return (
     <div>
-        <TodosList todosProps={todos} setTodos={setTodos} />
+      <InputTodo />
+      <TodosList todosProps={todos} setTodos={setTodos} delTodo={delTodo}/>
     </div>
   );
 };

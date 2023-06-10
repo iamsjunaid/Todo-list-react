@@ -1,9 +1,9 @@
-// ...
-const TodosList = ({ todosProps, setTodos }) => {
+import TodoItem from "./Todoitem";
+const TodosList = ({ todosProps, setTodos, delTodo }) => {
   return (
     <ul>
-      {todosProps.map((todo) => (
-        <TodoItem key={todo.id} itemProp={todo} setTodos={setTodos} />
+       {todosProps.map((todo) => (
+        <TodoItem key={todo.id} itemProp={todo} setTodos={setTodos} delTodo={delTodo}/>
       ))}
     </ul>
   );
