@@ -1,4 +1,5 @@
 import { useState } from 'react';
+/* eslint-disable react/prop-types */
 const InputTodo = ({ addTodoItem }) => {
   const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
