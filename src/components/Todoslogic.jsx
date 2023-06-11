@@ -1,35 +1,46 @@
 import { useState } from 'react';
 import TodosList from './TodosList';
 import InputTodo from '@/components/InputTodo';
+import { v4 as uuidv4 } from "uuid";
 
 const TodosLogic = () => {
+  
+  const [todos, setTodos] = useState([
+    {
+      id: uuidv4(),
+      title: 'Setup development environment',
+      completed: true,
+    },
+    {
+      id: uuidv4(),
+      title: 'Develop website and add content',
+      completed: false,
+    },
+    {
+      id: uuidv4(),
+      title: 'Deploy to live server',
+      completed: false,
+    },
+  ]);
+
   const delTodo = (id) => {
     setTodos([
       ...todos.filter((todo) => todo.id !== id),
     ]);
   };
 
-  const [todos, setTodos] = useState([
-    {
-      id: 1,
-      title: 'Setup development environment',
-      completed: true,
-    },
-    {
-      id: 2,
-      title: 'Develop website and add content',
+  const addTodoItem = (title) => {
+    const newTodo = {
+      id: uuidv4(),
+      title: title,
       completed: false,
-    },
-    {
-      id: 3,
-      title: 'Deploy to live server',
-      completed: false,
-    },
-  ]);
+    };
+    setTodos([...todos, newTodo]);
+  };
 
   return (
     <div>
-      <InputTodo />
+      <InputTodo addTodoItem={addTodoItem}/>
       <TodosList todosProps={todos} setTodos={setTodos} delTodo={delTodo} />
     </div>
   );
