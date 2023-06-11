@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 const TodoItem = ({ itemProp, setTodos, delTodo }) => {
-  
   const handleChange = (id) => {
     setTodos((prevState) =>
       prevState.map((todo) => {

@@ -3,12 +3,9 @@ import TodosList from './TodosList';
 import InputTodo from '@/components/InputTodo';
 
 const TodosLogic = () => {
-  
   const delTodo = (id) => {
     setTodos([
-      ...todos.filter((todo) => {
-        return todo.id !== id;
-      }),
+      ...todos.filter((todo) => todo.id !== id),
     ]);
   };
 
@@ -33,7 +30,7 @@ const TodosLogic = () => {
   return (
     <div>
       <InputTodo />
-      <TodosList todosProps={todos} setTodos={setTodos} delTodo={delTodo}/>
+      <TodosList todosProps={todos} setTodos={setTodos} delTodo={delTodo} />
     </div>
   );
 };
