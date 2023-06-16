@@ -43,21 +43,21 @@
 <details>
   <summary>HTML</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">index.html</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
   </ul>
 </details>
 
 <details>
 <summary>CSS</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">style.css</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Javascript</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">script.js</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -65,6 +65,13 @@
   <summary>ReactJS</summary>
   <ul>
     <li><a href="https://legacy.reactjs.org/docs/getting-started.html">ReactJS</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Vite</summary>
+  <ul>
+    <li><a href="(https://vitejs.dev/)">Vite</a></li>
   </ul>
 </details>
 
