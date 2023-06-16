@@ -120,7 +120,9 @@ For more information on how to clone or fork a repository:
 
 ### Install
 
-There is no installation required.
+```sh
+npm install
+```
 
 ### Usage
 
