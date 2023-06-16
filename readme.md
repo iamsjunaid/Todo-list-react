@@ -1,7 +1,7 @@
  
 <a id="readme-top"></a>
 
-# Todo-react
+# Todo list
 
 # 📗 Table of Contents
 
@@ -27,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Math-magicians <a name="about-project"></a>
+# 📖 Todo list <a name="about-project"></a>
 
-**Todo-react** is an todos app. It contains three navigations items. It can store and retrieve your daily set of tasks from the browser's localstorage. It consist of three navigation items.
+**Todo list** is an todos app. It can store and retrieve your daily set of tasks from the browser's localstorage. It consist of three navigation items.
 <ul>
 <li>Home</li>
 <li>About</li>
