@@ -79,9 +79,9 @@
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://iamsjunaid.github.io/todo-list-react) -->
+- [Live Demo Link](https://todo-list-react-8ect.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
